@@ -1,0 +1,25 @@
+header {
+  background-image: url("../images/landing-page.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 45rem;
+  margin: 0 auto;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.90);
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  top: 25%;
+  text-shadow: var(--text-shadow);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+  
+}
+
+/* .fade-in {
+  TO-DO
+} */

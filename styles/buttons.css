@@ -1,0 +1,21 @@
+.btn {
+  background-color: rgb(233, 237, 245);
+  background-color: rgb(228, 232, 242);
+  display: block;
+  width: 6.5rem;
+  height: 3.4rem;
+  margin: 2rem auto;
+  border: 1px solid var(--main-bg-color);
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+  box-shadow: 1px 1px 8px -5px rgba(0,0,0,0.5);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #000;
+}
+

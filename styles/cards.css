@@ -1,0 +1,20 @@
+.card {
+  /* border: 2px solid black; */
+  width: 17rem;
+  height: 24rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  /* padding: 0.5rem; */
+}
+
+.card img {
+  width: 100%;
+  max-height: 47%;
+}
+
+.card-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 1rem;
+}

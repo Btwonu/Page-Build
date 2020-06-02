@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Raleway:wght@400;500&family=Roboto+Condensed&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="styles/cards.css">
+  <link rel="stylesheet" href="styles/buttons.css">
+  <link rel="stylesheet" href="styles/landing.css">
+  <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/main.css">
-  <title>Page</title>
+  <title>FreshAir</title>
 </head>
+<!-- BODY -->
 <body>
-  <h1>Hello, Niki</h1>
+  <!-- NAVBAR -->
+    <nav>
+      <ul class="ul-nav"> 
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+<!-- LANDING -->
+  <div class="spacer">
+    <header>
+      <h1 class="fade-in">FreshAir</h1>
+    </header>
+  </div>
+<!-- MAIN -->
+  <div class="spacer">
+    <main>
+      <div class="card"> 
+        <img src="images/river.jpg" alt="">
+          <h2 class="card-heading">Riverrun</h2>
+          <button class="btn">Read More</button>
+      </div>
 
+      <div class="card"> 
+        <img src="images/beach.jpg" alt="">
+          <h2 class="card-heading">Beach Running</h2>
+          <button class="btn">Read More</button>
+      </div>
+
+      <div class="card"> 
+        <img src="images/winter.jpg" alt=""> 
+          <h2 class="card-heading">Winter is Coming</h2>
+          <button class="btn">Read More</button>
+      </div>
+    </main>
+  </div>
+
+  <aside>
+  </aside>
+<!-- FOOTER -->
+  <footer>
+  </footer>
+  <!-- JAVASCRIPT -->
   <script src="scripts/app.js"></script>
 </body>
 </html>
