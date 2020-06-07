@@ -3,6 +3,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1;
+  animation: slideBottom 1s;
 }
 
 .ul-nav {
@@ -18,4 +19,10 @@ nav {
 nav a {
   text-decoration: none;
   color: #000;
+}
+
+@keyframes slideBottom {
+  from {
+    margin-top: -50%;
+  }
 }
