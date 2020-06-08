@@ -34,7 +34,7 @@ hr {
 
 .footer-para {
   text-align: center;
-  padding: 2% 34% 1% 34%;
+  padding: 2% 25% 1% 25%;
   letter-spacing: 0.1rem;
 }
 
@@ -97,8 +97,12 @@ hr {
   font-weight: 600;
 }
 
-
-/* footer-items
-footer-para
-footer-icons
-footer-copy */
+@media (max-width: 700px) {
+  .footer-items ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-para {
+    padding: 2% 5% 1% 5%;
+  }
+}

@@ -1,3 +1,11 @@
+.cards {
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
 .card {
   /* border: 2px solid black; */
   width: 20rem;
