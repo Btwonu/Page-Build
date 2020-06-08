@@ -67,7 +67,7 @@ hr {
 }
 
 #facebook-icon:hover {
-
+  background-image: url("../images/icons/facebook-icon-white.svg");
 }
 
 #linkedin-icon {
@@ -75,15 +75,15 @@ hr {
 }
 
 #linkedin-icon:hover {
-
+  background-image: url("../images/icons/linked-icon-white.svg");
 } 
 
 #instagram-icon {
-  background-image: url("../images/icons/instagram-icon-white.svg");
+  background-image: url("../images/icons/instagram-icon-black.svg");
 }
 
 #instagram-icon:hover {
-
+  background-image: url("../images/icons/instagram-icon-white.svg");
 }
 
 .footer-copy {
