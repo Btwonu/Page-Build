@@ -45,6 +45,60 @@ nav a:hover::after {
   background-color: #000;
 } */
 
+/* HAMBURGER */
+.hamburger {
+  position: absolute;
+  height: 2px;
+  width: 34px;
+  border-radius: 1px;
+  background: #000;
+  vertical-align: middle;
+  left: 1.4rem;
+  top: 1.8rem;
+  display: none;
+}
+
+.hamburger::before, .hamburger::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 1px;
+  background: #293335;
+}
+
+.hamburger::before {
+  top: -11px;
+  left: 3px;
+  width: 28px;
+}
+
+.hamburger::after {
+  top: 11px;
+  left: 6px;
+  width: 22px;
+}
+		/* &:before, &:after {
+		  display: inline-block;
+			position: absolute;
+			content: "";
+			height: 2px;
+			border-radius: 1px;
+			background: #293335;
+			// for the hover state
+			transition: all 200ms;
+		}
+		&:before {
+		  top: -11px;
+			left: 3px;
+			width: 28px;
+		}
+		&:after {
+		  top: 11px;
+			left: 6px;
+			width: 22px;
+    } */
+
 @keyframes slideBottom {
   from {
     margin-top: -50%;
@@ -55,5 +109,11 @@ nav a:hover::after {
   .ul-nav {
     flex-direction: column;
     align-items: center;
+    /* HAMBURGER */
+    position: relative;
+  }
+  .hamburger {
+    display: inline-block;
   }
 }
+
