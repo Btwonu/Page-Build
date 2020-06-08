@@ -22,8 +22,26 @@ footer a {
   justify-content: space-evenly;
 }
 
-.footer-items li {
-  padding: 1.5rem;
+.footer-items a {
+  display: block;
+  padding: 1.5rem 1.2rem;
+  position: relative;
+}
+
+.footer-items a::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transition: all 500ms ease;
+}
+
+.footer-items a:hover::after {
+  left: 8%;
+  width: 88%;
 }
 
 hr {
