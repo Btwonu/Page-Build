@@ -4,6 +4,10 @@ nav {
   width: 100%;
   z-index: 1;
   animation: slideBottom 1.5s;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  /* height: 4rem; */
 }
 
 .ul-nav {
@@ -14,7 +18,14 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-evenly;
   list-style-type: none;
+  width: 100%;
+
+  /* DELETE */
+  position: absolute;
+  margin-top: 0;
 }
+
+
 
 nav a {
   text-decoration: none;
@@ -40,64 +51,62 @@ nav a:hover::after {
   width: 100%;
 }
 
-/* nav a:hover {
-  color: #fff;
-  background-color: #000;
-} */
-
 /* HAMBURGER */
-.hamburger {
+
+.menu-btn {
+  z-index: 2;
   position: absolute;
-  height: 2px;
-  width: 34px;
-  border-radius: 1px;
-  background: #000;
-  vertical-align: middle;
-  left: 1.4rem;
-  top: 1.8rem;
+  left: 0;
+  top: 0;
   display: none;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 4rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
 }
-
-.hamburger::before, .hamburger::after {
-  display: inline-block;
+.menu-btn__burger {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
   position: absolute;
-  content: "";
-  height: 2px;
-  border-radius: 1px;
-  background: #293335;
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 5px;
+  transition: all .5s ease-in-out;
 }
 
-.hamburger::before {
-  top: -11px;
-  left: 3px;
-  width: 28px;
+.menu-btn__burger::before {
+  transform: translateY(-12px);
+}
+.menu-btn__burger::after {
+  transform: translateY(12px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 
-.hamburger::after {
-  top: 11px;
-  left: 6px;
-  width: 22px;
-}
-		/* &:before, &:after {
-		  display: inline-block;
-			position: absolute;
-			content: "";
-			height: 2px;
-			border-radius: 1px;
-			background: #293335;
-			// for the hover state
-			transition: all 200ms;
-		}
-		&:before {
-		  top: -11px;
-			left: 3px;
-			width: 28px;
-		}
-		&:after {
-		  top: 11px;
-			left: 6px;
-			width: 22px;
-    } */
+
+
+
 
 @keyframes slideBottom {
   from {
@@ -112,8 +121,13 @@ nav a:hover::after {
     /* HAMBURGER */
     position: relative;
   }
-  .hamburger {
-    display: inline-block;
+  
+  .menu-btn {
+    display: flex;
+  }
+
+  .ul-nav.hidden {
+    display: none;
   }
 }
 
