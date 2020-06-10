@@ -62,7 +62,7 @@ nav a:hover::after {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height: 4rem;
+  height: 4.2rem;
   cursor: pointer;
   transition: all .5s ease-in-out;
   /* border: 3px solid #fff; */
