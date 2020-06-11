@@ -36,12 +36,13 @@ main {
 }
 
 main article {
-  padding: 0 1.5rem;
+  padding: 2rem;
 }
 
 main article h2 {
   font-size: 2rem;
   text-align: center;
+  padding: 2rem;
   margin-bottom: 2rem;
 }
 
