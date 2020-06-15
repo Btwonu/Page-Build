@@ -9,7 +9,6 @@
   /* border: 5rem solid rgba(94, 128, 180, 0.3); */
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-top: 3px ridge rgba(10, 10, 10, 0.7);
-  border-radius: 1px;
   background-color: #fff;
   padding: 3rem 5rem 5rem;
   margin: 10rem 0;
@@ -17,6 +16,10 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+  /* border-radius: 10px; */
+  border-radius: 1px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 #blog-main h2 {
@@ -71,14 +74,15 @@ aside {
   background-color: #fff;
   position: fixed;
   right: 1%;
-  width: 15%;
-  height: 25rem;
-  margin: 11rem 0;
-
+  width: 20rem;
+  height: 30rem;
+  margin: 8rem 0;
   border: 1px solid rgba(20, 20, 20, 0.2);
   border-top: 3px ridge rgba(10, 10, 10, 0.7);
   box-shadow: var(--box-shadow);
   border-radius: 1px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 aside h2 {
@@ -87,19 +91,77 @@ aside h2 {
   font-size: 2.2rem;
   text-align: center;
   padding: 1rem;
+  color: #222;
 }
 
+#aside-main {
+  margin: 0 1rem;
+}
 
-/* 
-#blog-main article {
-  border: 1px solid rgba(20, 20, 20, 0.2);
-  border-top: 3px ridge rgba(10, 10, 10, 0.7);
-  border-radius: 1px;
-  background-color: #fff;
-  padding: 3rem 5rem 5rem;
-  margin: 10rem 0;
-  box-shadow: var(--box-shadow);
+.aside-item {
+  /* Aside Div */
+  height: 7rem;
+  margin-bottom: 1.5rem;
+  padding: 0.2rem;
+}
+
+.aside-item:hover {
+  background-color: rgb(245, 245, 245, 1);
+}
+
+.aside-item-image {
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-} */
+  height: 100%;
+}
+
+.aside-item-image img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grown-div {
+  flex-grow: 1;
+  padding: 0.8rem;
+}
+
+.grown-div h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.block-span {
+  display: inline-block;
+}
+
+@media (max-width: 960px) {
+  #blog-main {
+    width: auto;
+  }
+
+  #blog-main article {
+    padding: 1rem;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #blog-main {
+    margin: 0 2%;
+  }
+
+  #blog-main article {
+    padding: 0;
+  }
+
+  main {
+    margin: 0 2%;
+    overflow: auto;
+  }
+}
