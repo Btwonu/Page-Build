@@ -2,7 +2,7 @@ nav {
   box-shadow: var(--box-shadow);
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   animation: slideBottom 1.5s;
   background: #fff;
   display: flex;

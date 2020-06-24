@@ -3,11 +3,11 @@ const hamburgerButton = document.querySelector('.menu-btn');
 const navbarUl = document.querySelector('.ul-nav');
 let menuOpened = false;
 
-
 navbarUl.classList.add('hidden');
 navbar.style.height = '4.2rem';
 
 hamburgerButton.addEventListener('click', (e) => {
+
   if (!menuOpened) {
     hamburgerButton.classList.add('open');
     menuOpened = true;
@@ -17,7 +17,6 @@ hamburgerButton.addEventListener('click', (e) => {
     menuOpened = false;
   }
 
-
   if (menuOpened) {
     navbar.style.height = 'auto';
   } else {
@@ -25,5 +24,4 @@ hamburgerButton.addEventListener('click', (e) => {
   }
 
   navbarUl.classList.toggle('hidden');
-  
 });

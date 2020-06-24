@@ -1,5 +1,12 @@
 header {
-  background-image: url("../images/landing-page.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header .slider-image, header .content {
+  /* background-image: url("../images/landing-page.jpg"); */
   background-position: center center;
   background-size: cover;
   /* width: 100vw;
@@ -19,7 +26,7 @@ h1 {
   text-align: center;
   position: relative;
   top: 25%;
-  text-shadow: var(--text-shadow);
+  text-shadow: var(--text-shadowBlack);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -29,9 +36,69 @@ h1 {
   animation-timing-function: ease-in;
 }
 
+/* IMAGE SLIDER */
+.image-0 {
+  background-image: url("../images/landing-page.jpg");
+}
+
+.image-1 {
+  background-image: url("../images/landing-page-1.jpg");
+}
+
+.image-2 {
+  background-image: url("../images/landing-page-2.jpg");
+}
+
+.image-3 {
+  background-image: url("../images/landing-page-3.jpg");
+}
+
+.slider-btn {
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#slider-btn-left {
+  left: 0;
+}
+
+#slider-btn-right {
+  right: 0;
+}
+
+.slider-btn:hover {
+  background-color: rgba(240, 240, 240, 0.12);
+  animation-name: fade-in;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in;
+}
+
+.arrow {
+  position: relative;
+  top: 50%;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
+}
+
+#arrow-right {
+  background-image: url("../images/icons/arrow-icon-right.svg");
+  right: -40%;
+}
+
+#arrow-left {
+  background-image: url("../images/icons/arrow-icon-left.svg");
+  left: 40%;
+}
+
 /* ANIMATION */
 .fade {
     animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
 
 @keyframes fade-in {
