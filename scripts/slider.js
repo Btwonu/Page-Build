@@ -48,5 +48,5 @@ function slideRight() {
 const menuGallery = document.querySelector('#menu-gallery');
 
 menuGallery.addEventListener('click', () => {
-  navigator.birate(1000);
+  navigator.vibrate(1000);
 });
