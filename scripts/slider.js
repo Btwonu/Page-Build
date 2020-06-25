@@ -43,3 +43,10 @@ function slideRight() {
   allImages[current + 1].style.display = 'block';
   current++;
 }
+
+//Experiment
+const menuGallery = document.querySelector('#menu-gallery');
+
+menuGallery.addEventListener('click', () => {
+  navigator.birate(1000);
+});
