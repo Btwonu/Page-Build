@@ -1,4 +1,9 @@
-# This simple project is built in collaboration with Nikolay Yanev;
-# Niki can be found on GitHub: https://github.com/nikiyanev
-# Its' purpose is for us to practice our HTML, CSS and JS skills while learning how to build a website;
-# The page is hosted on GitHub Pages and can be found at this link: https://btwonu.github.io/Page-Build/
+## Landing Page
+
+---
+
+This project is built in collaboration with Nikolay Yanev. Its' purpose is educational.
+
+Focus is primarily on the **CSS** with some small **JS** functionalities.
+
+Check out Niki's [GitHub](https://github.com/nikiyanev)
