@@ -70,28 +70,59 @@
 }
 
 /* SIDEBAR */
-aside {
+.sidebar {
   background-color: #fff;
   position: fixed;
-  right: 1%;
+  right: 0;
+  top: 4.2rem;
+  z-index: 1;
   width: 20rem;
-  height: 30rem;
-  margin: 8rem 0;
+  height: 100%;
   border: 1px solid rgba(20, 20, 20, 0.2);
-  border-top: 3px ridge rgba(10, 10, 10, 0.7);
+  /* border-top: 3px ridge rgba(10, 10, 10, 0.7); */
   box-shadow: var(--box-shadow);
   border-radius: 1px;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  transition: var(--transition-main);
 }
 
-aside h2 {
+.sidebar header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.sidebar h2 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
   color: #222;
+  flex: 1;
+}
+
+.sidebar-close {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 2;
+}
+
+.sidebar-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 1rem;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.sidebar-open.show {
+  visibility: visible;
 }
 
 #aside-main {
@@ -120,6 +151,12 @@ aside h2 {
   object-fit: cover;
   border-radius: 5px;
 }
+
+.sidebar.close {
+  transform: translateX(100%);
+}
+
+/* SIDEBAR END */
 
 .grown-div {
   flex-grow: 1;

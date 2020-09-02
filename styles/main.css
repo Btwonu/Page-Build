@@ -4,7 +4,8 @@
   --footer-bg-color: rgb(114, 133, 165);
   --text-shadow: 4px 4px 5px rgb(75, 71, 71);
   --text-shadowBlack: 4px 4px 5px rgb(34, 25, 25);
-  --box-shadow: 2px 2px 12px -3px rgba(0,0,0,0.75);
+  --box-shadow: 2px 2px 12px -3px rgba(0, 0, 0, 0.75);
+  --transition-main: all 0.2s ease-in;
   /* FONTS */
   /* 
   font-family: 'Lato', sans-serif;
@@ -22,6 +23,10 @@
   padding: 0;
   box-sizing: border-box;
   font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -49,7 +54,6 @@ main article h2 {
 
 main article p {
   margin-bottom: 1rem;
-  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.01rem;
 }
@@ -58,7 +62,11 @@ main article span {
   font-weight: 600;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -72,6 +80,12 @@ a {
 
 .fade-in {
   transition: background-color 0.8s;
+}
+
+/* UTILITY CLASSES */
+.wrapper {
+  margin: 0 auto;
+  max-width: 680px;
 }
 
 /* MEDIA QUERIES */
