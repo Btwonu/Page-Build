@@ -21,3 +21,5 @@ Focus is primarily on the **CSS** with some small **JS** functionalities.
   - toggling menus and animations
 
 ---
+
+The page is hosted with GitHub pages. It can be found [here](https://btwonu.github.io/Page-Build/).
